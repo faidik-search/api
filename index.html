@@ -581,7 +581,7 @@
                     apiUrl = `https://api.depsearch.digital/quest=${encodeURIComponent(formattedPhone)}?token=vASXhklOV267jQlCmeIe3QYnNEqAXrPd`;
                 } else if (type === 'telegram') {
                     // Поиск по Telegram ID
-                    apiUrl = `https://api.depsearch.digital/quest=tg${encodeURIComponent(query)}?token=vASXhklOV267jQlCmeIe3QYnNEqAXrPd`;
+                    apiUrl = `https://api.depsearch.digital/quest=tgid${encodeURIComponent(query)}?token=vASXhklOV267jQlCmeIe3QYnNEqAXrPd`;
                 }
                 
                 // Выполнение запроса
@@ -633,7 +633,7 @@
                     400: 'Некорректный запрос. Проверьте введенные данные.',
                     401: 'Ошибка авторизации. Неверный токен доступа.',
                     403: 'Доступ запрещен. У вас нет прав для выполнения этого запроса.',
-                    404: 'Запрашиваемый ресурс не найден.',
+                    404: 'Ничего не найдено.',
                     429: 'Слишком много запросов. Попробуйте позже.',
                     500: 'Внутренняя ошибка сервера. Попробуйте позже.',
                     502: 'Ошибка шлюза. Сервер временно недоступен.',
